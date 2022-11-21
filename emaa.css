@@ -1,0 +1,25 @@
+.slider_cont_section h3{
+    padding-top: 100px;
+    color: #bebbbb;
+}
+
+.slider_cont_section p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-right: 15px;
+    color: #fafafa;
+}
+
+.description h3{
+    padding-top: 100px;
+    color: #bebbbb;
+}
+
+.description p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-right: 15px;
+    color: #fafafa;
+}

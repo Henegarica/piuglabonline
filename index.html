@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+
+    <title>My website</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7EDTNMD9L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T7EDTNMD9L');
+    </script>
+
+    <link rel="icon" href="images/logo.jpg" type="image/gif">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+
+  </head>
+
+  <body id="index">
+
+    <!-- Go Top -->
+    <div class="arrow-btn">
+        <a href="#"><span class="fas fa-angle-up"></span></a>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 fixed-top">
+            <div class="preloader-wrapper">
+                <div class="spinner-border text-primary">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav h5">
+                        <li class="nav-item"><a href="#index" class="nav-link text-white">Acasă</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-white">Despre mine</a></li>
+                        <li class="nav-item"><a href="#artisti" class="nav-link text-white">Artiști</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="my-checkbox" onclick="setDarkMode()">
+                    <label class="form-check-label text-white" for="checkbox">Dark Mode</label>
+                </div>
+                <form class="d-flex" role="search" id="form">
+                    <input class="form-control me-2" type="search" placeholder="Cauta" id="search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Cauta</button>
+                    <script>
+                        const f = document.getElementById('form');
+                        const s = document.getElementById('search');
+                        const google = 'http://www.google.com/search?q=';
+                        const site = '';
+    
+                        function submitted(event) {
+                            event.preventDefault();
+                            const url = google + site + '+' + s.value;
+                            const win = window.open(url, '_blank');
+                            win.focus();
+                        }
+    
+                        f.addEventListener('submit', submitted);
+                    </script>
+                </form>
+            </div>
+        </nav> 
+    </header>
+
+    <!-- Top page -->
+    <img src="images/first.jpg" alt="#" width="100%">
+
+    <!-- About -->
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="...">
+                    <h2>Despre mine!</h2>
+                    <hr class="divider divider-light" />
+                    <p align="justify">Mă numesc Cristian Henegariu, sunt student in anul 4 la Facultatea de Automatică și 
+                    Calculatoare la Universitatea Politehnică Timișoara. Sunt o persoană sportivă practic destul de multe sporturi, cel mai des fotbal, tenis, ski ( fix in ordinea asta:) ). 
+                    Pe lângă asta îmi place sa îmi petrec timpul cu prietenii mei și să fac diferite excursii sau drumeții pe munți și nu numai (anul trecut am urcat pe cel mai înalt vârf din România,
+                    pe vărful Moldoveanu 2544m). Pe lângă acestea mai sunt foarte pasionat de muzică și îmi place foarte mult să particip la concertele artiștilor mei favoriți, prin intermediul
+                    acestui site am să prezit câteva concerte și artiști la care eu am mers și am cântat melodiile mele favorite. În prezent lucrez în domeniul IT și sunt pasionat de mic de tot ce ține de calculatoare și jocuri pe acestea. Pe lânga toate acestea 
+                    mai pot spune că sunt un mare fan al mâncării și dacă ar fi un lucru fără de care nu aș putea trăi ăla ar fi mâncarea:).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artistii favoriti -->
+    <section id="artisti" class="section border-t">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center">
+                    <h1 class="heading mb-4">Artiștii mei favoriți</h1>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <a href="ctc.html" class="link-thumbnail">
+                        <h3>
+                            <span class="date">Decembrie 12, 1999</span> CTC
+                        </h3>
+                        <span class="fa fa-plus"></span>
+                        <img src="images/ctc.png" alt="Image placeholder" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="carlas.html" class="link-thumbnail">
+                        <h3>
+                            <span class="date">Ianuarie 20, 2012</span> Carla's Dreams
+                        </h3>
+                        <span class="fa fa-plus"></span>
+                        <img src="images/carlas.JPG" alt="Image placeholder" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="emaa.html" class="link-thumbnail">
+                        <h3>
+                            <span class="date">August 29, 2015</span> EMAA
+                        </h3>
+                        <span class="fa fa-plus"></span>
+                        <img src="images/emaa.png" alt="Image placeholder" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="container-fluid" id="contact">
+        <div class="container mt-5">
+            <h1>Trimite-mi un mesaj!</h1>
+            <form class="row g-3" onsubmit="sendEmail()">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">Prenume</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Nume</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInfo" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Număr de telefon</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="+40 7xxxxxxxx">
+                </div>
+                <div class="col-md-12">
+                    <label for="comments" class="form-label">Dorești să îmi spui ceva?</label>
+                    <textarea class="form-control" id="comments" rows="3"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Trimite</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+    <!-- Social Media -->
+    <div style="background-color:#e5e5e5;text-align:center;">
+        <a class="facebook_icon" href="https://www.facebook.com/cristianhenegariu/" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a class="instagram_icon" href="https://www.instagram.com/cristianhenegariu/" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+    </div>
+
+    
+
+    <!-- Scripts -->
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="darkmodescript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

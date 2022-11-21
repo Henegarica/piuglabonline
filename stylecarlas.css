@@ -1,0 +1,10 @@
+body{
+    background-image: url("images//backgroudc.jpg");
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+}
+
+.video_cont_section h3{
+    padding-top: 0px;
+    color: antiquewhite;
+}
